@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Dashboard - Period Cramp Soother</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="dashboard.css" />
+    <script type="module" src="dashboard.js"></script>
+    <script type="module" src="intensity.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-content">
+        <div class="logo">PCS</div>
+        <div class="nav-right">
+          <div class="nav-links">
+            <a href="/dashboard" aria-current="page">Dashboard</a>
+            <a href="/profile">Profile</a>
+          </div>
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button class="search-button">⌘K</button>
+          </div>
+          <button class="theme-toggle">☀️</button>
+        </div>
+      </div>
+    </nav>
+
+    <main class="dashboard-main">
+      <div class="dashboard-header">
+        <h1>Welcome back</h1>
+        <p class="date">February 15, 2024</p>
+      </div>
+
+      <div class="dashboard-grid">
+        <div class="dashboard-card period-tracker">
+          <h2>Period Tracker</h2>
+          <div class="calendar">
+            <div class="calendar-header">
+              <button class="calendar-nav">←</button>
+              <h3>February 2024</h3>
+              <button class="calendar-nav">→</button>
+            </div>
+            <div class="calendar-grid">
+              <!-- Calendar days will be populated by JavaScript -->
+            </div>
+          </div>
+          <div class="period-legend">
+            <span class="legend-item">
+              <span class="dot period"></span>Period
+            </span>
+            <span class="legend-item">
+              <span class="dot predicted"></span>Predicted
+            </span>
+          </div>
+          <div class="next-period-info">
+            <h3>Next Period Expected</h3>
+            <p class="next-period">Loading...</p>
+          </div>
+        </div>
+
+        <div class="dashboard-card cramp-intensity">
+          <h2>Cramp Intensity</h2>
+          <div class="intensity-chart">
+            <div class="chart-bar" style="height: 60%"><span>Mon</span></div>
+            <div class="chart-bar" style="height: 80%"><span>Tue</span></div>
+            <div class="chart-bar active" style="height: 40%">
+              <span>Wed</span>
+            </div>
+            <div class="chart-bar" style="height: 30%"><span>Thu</span></div>
+            <div class="chart-bar" style="height: 20%"><span>Fri</span></div>
+            <div class="chart-bar" style="height: 10%"><span>Sat</span></div>
+            <div class="chart-bar" style="height: 5%"><span>Sun</span></div>
+          </div>
+        </div>
+
+        <div class="dashboard-card device-status">
+          <h2>Device Status</h2>
+          <div class="status-content">
+            <div class="battery-status">
+              <div class="battery-icon">
+                <div class="battery-level" style="width: 75%"></div>
+              </div>
+              <span>75% Battery</span>
+            </div>
+            <div class="connection-status connected">
+              <span class="status-dot"></span>
+              Connected
+            </div>
+            <div class="intensity-monitor">
+              <div class="monitor-row">
+                <span>Intensity:</span>
+                <span class="intensity-value">0</span>
+              </div>
+              <div class="monitor-row">
+                <span>Frequency:</span>
+                <span class="frequency-value">0</span>
+              </div>
+            </div>
+            <div class="intensity-controls">
+              <button class="intensity-button high-button">High</button>
+              <button class="intensity-button medium-button">Medium</button>
+              <button class="intensity-button low-button">Low</button>
+            </div>
+            <button class="primary-button start-session">Start Session</button>
+          </div>
+        </div>
+
+        <div class="dashboard-card recommendations">
+          <h2>Recommendations</h2>
+          <div class="recommendation-list">
+            <div class="recommendation-item">
+              <span class="recommendation-icon">💊</span>
+              <div class="recommendation-content">
+                <h4>Take medication</h4>
+                <p>Time for your next dose</p>
+              </div>
+            </div>
+            <div class="recommendation-item">
+              <span class="recommendation-icon">🫖</span>
+              <div class="recommendation-content">
+                <h4>Drink herbal tea</h4>
+                <p>Helps reduce cramps</p>
+              </div>
+            </div>
+            <div class="recommendation-item">
+              <span class="recommendation-icon">🧘‍♀️</span>
+              <div class="recommendation-content">
+                <h4>Light exercise</h4>
+                <p>Try gentle stretching</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <p>© 2024 Period Cramp Soother, Inc.</p>
+    </footer>
+  </body>
+</html>
