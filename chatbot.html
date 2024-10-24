@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Period Health AI Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="chatbot.css">
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+          <div class="logo nav-links">
+            <a href="index.html">PCS</a></div>
+          <div class="nav-right">
+            <div class="nav-links">
+              <a href="dashboard.html">Dashboard</a>
+              <a href="chatbot.html">chatbot</a>
+              <a href="/profile.html">Profile</a>
+            </div>
+            <div class="search-container">
+              <input type="text" placeholder="Search..." class="search-input" />
+              <button class="search-button">⌘K</button>
+            </div>
+            <button class="theme-toggle">☀️</button>
+          </div>
+        </div>
+      </nav>
+    <div class="chat-container">
+        <div class="chat-header">
+            <h1>Period Health Assistant</h1>
+            <p>Your trusted companion for menstrual health information</p>
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot">
+                <div class="message-content">
+                    Hello! I'm your assistant for period health and education. I can provide information about:
+                    
+                    • Menstrual cycles and period basics
+                    • Period products and their usage
+                    • Pain management and comfort tips
+                    • Hygiene practices and self-care
+                    • Common concerns and myths
+                    
+                    How can I help you today?
+                </div>
+            </div>
+        </div>
+        <div class="chat-input">
+            <textarea id="userInput" placeholder="Ask me anything about period health..." rows="1"></textarea>
+            <button id="sendButton" onclick="chatController.sendMessage()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="js/knowledge-base.js"></script>
+    <script src="js/message-handler.js"></script>
+    <script src="js/chat-controller.js"></script>
+</body>
+</html>
