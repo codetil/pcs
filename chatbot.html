@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Period Health AI Assistant</title>
-    <link rel="stylesheet" href="styles.css" />
+    <title>Period Health Assistant</title>
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="chatbot.css">
 </head>
 <body>
@@ -26,15 +26,17 @@
           </div>
         </div>
       </nav>
+
     <div class="chat-container">
         <div class="chat-header">
             <h1>Period Health Assistant</h1>
             <p>Your trusted companion for menstrual health information</p>
         </div>
         <div class="chat-messages" id="chatMessages">
+            <!-- Initial bot message -->
             <div class="message bot">
                 <div class="message-content">
-                    Hello! I'm your assistant for period health and education. I can provide information about:
+                    Hello! I'm your Period Health Assistant. I can provide information about:
                     
                     • Menstrual cycles and period basics
                     • Period products and their usage
@@ -48,8 +50,8 @@
         </div>
         <div class="chat-input">
             <textarea id="userInput" placeholder="Ask me anything about period health..." rows="1"></textarea>
-            <button id="sendButton" onclick="chatController.sendMessage()">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <button id="sendButton" aria-label="Send message">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                     <line x1="22" y1="2" x2="11" y2="13"></line>
                     <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
                 </svg>
@@ -57,8 +59,7 @@
         </div>
     </div>
     <script src="script.js"></script>
-    <script src="js/knowledge-base.js"></script>
-    <script src="js/message-handler.js"></script>
-    <script src="js/chat-controller.js"></script>
+
+    <script src="chatbot.js"></script>
 </body>
 </html>
